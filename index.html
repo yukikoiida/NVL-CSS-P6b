@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica selectores 2</title>
+    <style>
+        div p{
+            border: #fabada 2px solid;
+        }
+        .importante + p{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+        <p>Nulla a vulputate risus, sed varius odio. Etiam sed lacus eget turpis dictum vulputate non in elit. Cras fermentum diam eget efficitur vestibulum.</p>
+        <p>Etiam accumsan faucibus felis vitae vulputate. Nunc eget tincidunt orci. Quisque orci ligula, laoreet id augue maximus, dictum scelerisque lorem.</p>
+    <div>
+        <p class="importante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur justo arcu, pretium ut nisl cursus, euismod dapibus risus.</p>
+        <p>Nunc fringilla nisi in augue consectetur, quis porttitor turpis varius. Praesent faucibus nulla vel tellus hendrerit, a bibendum nisi eleifend. </p>
+        <p>Nullam sed porttitor quam. Sed dapibus lectus non lobortis tempus. Proin placerat, justo sit amet venenatis commodo, nisl turpis semper arcu, quis mattis nulla eros vitae nunc. </p>
+        
+    </div>
+    
+</body>
+</html>
+<!--
+Todos los <p> hijos directos de un <div> deberán tener un borde de 2px, sólido y de color #fabada
+        Todos los <p> que sean primer elemento del div deberán tener una clase “importante”.
+        Sólos <p> que estén al lado de estos <p> con clase importante tendrán su color de texto a rojo.
+-->
